@@ -24,3 +24,18 @@ movies.forEach((movie) => {
   moviesList.appendChild(li);
 });
 document.body.appendChild(moviesList);
+
+const student = {
+  name: "Gustavo",
+  age: 22,
+  skills: ["HTML", "CSS", "JavaScript"],
+};
+
+const studentDiv = document.createElement("div");
+studentDiv.innerHTML = `
+  <h2>Student Details</h2>
+  <p>Name: ${student.name}</p>
+  <p>Age: ${student.age}</p>
+  <p>Skills: ${student.skills.join(", ")}</p>
+`;
+document.body.appendChild(studentDiv);
