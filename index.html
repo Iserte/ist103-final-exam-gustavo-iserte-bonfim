@@ -7,21 +7,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="bg-btn">Change Background</button>
+    <header>
+      <h1 id="title">IST103 Website Development - Final Exam</h1>
+    </header>
 
-    <form id="contact-form" novalidate>
-      <label>Name: <input type="text" id="name" /></label>
-      <div class="error" id="err-name"></div>
+    <main>
+      <!-- Part B: Arrays & Objects -->
+      <section id="movies-section">
+        <h2>Favorite Movies</h2>
+        <ul id="movie-list"></ul>
+      </section>
 
-      <label>Email: <input type="email" id="email" /></label>
-      <div class="error" id="err-email"></div>
+      <section id="student-section">
+        <h2>Student Details</h2>
+        <div id="student-info"></div>
+      </section>
 
-      <label>Message: <textarea id="message"></textarea></label>
-      <div class="error" id="err-message"></div>
+      <!-- Part C: Functions & Logic -->
+      <section id="square-section">
+        <h2>Square Results</h2>
+        <div id="square-results"></div>
+      </section>
 
-      <button type="submit">Submit</button>
-      <div id="success-msg"></div>
-    </form>
+      <section id="sum-section">
+        <h2>Sum with While Loop</h2>
+        <p id="sum-result"></p>
+      </section>
+
+      <!-- Part D: DOM Interaction & Events -->
+      <section id="interaction-section">
+        <h2>Interactive</h2>
+        <button id="bg-btn">Change Background</button>
+      </section>
+
+      <section id="form-section">
+        <h2>Contact Form</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <div class="error" id="err-name"></div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <div class="error" id="err-email"></div>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <div class="error" id="err-message"></div>
+
+          <button type="submit">Submit</button>
+          <div id="success-msg"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Gustavo Iserte Bonfim - CT1010953</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
