@@ -81,3 +81,45 @@ while (counter <= 5) {
 const sumP = document.createElement("p");
 sumP.textContent = `Sum of 1 to 5: ${sum}`;
 document.body.appendChild(sumP);
+
+// Change background button
+document.getElementById("bg-btn").addEventListener("click", () => {
+  const randomColor = `hsl(${Math.random() * 360}, 70%, 80%)`;
+  document.body.style.backgroundColor = randomColor;
+});
+
+// Form validation
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  // Clear old errors
+  ["name", "email", "message"].forEach(
+    (id) => (document.getElementById(`err-${id}`).textContent = "")
+  );
+
+  const nameVal = document.getElementById("name").value.trim();
+  const emailVal = document.getElementById("email").value.trim();
+  const msgVal = document.getElementById("message").value.trim();
+
+  if (!nameVal) {
+    valid = false;
+    document.getElementById("err-name").textContent = "Name is required";
+  }
+  if (!emailVal.includes("@")) {
+    valid = false;
+    document.getElementById("err-email").textContent = "Valid email required";
+  }
+  if (!msgVal) {
+    valid = false;
+    document.getElementById("err-message").textContent =
+      "Message cannot be empty";
+  }
+
+  if (valid) {
+    document.getElementById("success-msg").textContent =
+      "Form submitted successfully!";
+    form.reset();
+  }
+});

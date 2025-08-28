@@ -6,6 +6,22 @@
     <title>CT1010953 - Gustavo Iserte Bonfim</title>
   </head>
   <body>
+    <button id="bg-btn">Change Background</button>
+
+    <form id="contact-form" novalidate>
+      <label>Name: <input type="text" id="name" /></label>
+      <div class="error" id="err-name"></div>
+
+      <label>Email: <input type="email" id="email" /></label>
+      <div class="error" id="err-email"></div>
+
+      <label>Message: <textarea id="message"></textarea></label>
+      <div class="error" id="err-message"></div>
+
+      <button type="submit">Submit</button>
+      <div id="success-msg"></div>
+    </form>
+
     <script src="script.js"></script>
   </body>
 </html>
