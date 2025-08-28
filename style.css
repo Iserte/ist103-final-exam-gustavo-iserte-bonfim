@@ -42,6 +42,10 @@ h2 {
   color: #222;
 }
 
+#title {
+  color: #eee;
+}
+
 /* === Movie List === */
 #movie-list {
   list-style-type: disc;
