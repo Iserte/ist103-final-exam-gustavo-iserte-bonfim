@@ -1,4 +1,120 @@
+/* === Base Reset & Typography === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* === Layout Structure === */
+header,
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === Headings === */
+h1,
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* === Movie List === */
+#movie-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* === Button Styling === */
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 button:hover {
+  background-color: #005fa3;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+/* === Form Styling === */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#success-msg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
 }
