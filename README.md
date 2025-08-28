@@ -36,7 +36,12 @@ This project was developed as part of the final exam for IST103. It demonstrates
 
 ---
 
-## 🛠 How to Run
+## 📸 Live Preview  
+🔗 [View on GitHub Pages](https://iserte.github.io/ist103-final-exam-gustavo-iserte-bonfim/)
+
+---
+
+## 🛠 How to Run on Your Local Machine
 
 1. Clone the repository:
    ```bash
