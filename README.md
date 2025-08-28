@@ -1,9 +1,9 @@
 # JavaScript Final Exam – IST103
 
-**Student:** Gustavo Iserte Bonfim - CT1010953
-**Course:** IST103 – Website Development
-**Project Title:** Final Exam
-**Repository:** `ist103-final-exam-gustavo-iserte-bonfim`
+- **Student:** Gustavo Iserte Bonfim - CT1010953
+- **Course:** IST103 – Website Development
+- **Project Title:** Final Exam
+- **Repository:** `ist103-final-exam-gustavo-iserte-bonfim`
 
 ---
 
