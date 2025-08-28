@@ -10,6 +10,7 @@ console.log("Is student:", isStudent);
 console.log("Empty value:", emptyValue);
 console.log("No value:", noValue);
 
+// Movies list
 const movies = [
   "Inception",
   "Spirited Away",
@@ -17,6 +18,7 @@ const movies = [
   "Interstellar",
   "Parasite",
 ];
+
 const moviesList = document.createElement("ul");
 movies.forEach((movie) => {
   const li = document.createElement("li");
@@ -25,6 +27,7 @@ movies.forEach((movie) => {
 });
 document.body.appendChild(moviesList);
 
+// Student object
 const student = {
   name: "Gustavo",
   age: 22,
@@ -39,3 +42,42 @@ studentDiv.innerHTML = `
   <p>Skills: ${student.skills.join(", ")}</p>
 `;
 document.body.appendChild(studentDiv);
+
+function calculateSquare(num) {
+  return num * num;
+}
+
+// Display results
+[2, 5, 10].forEach((val) => {
+  console.log(`Square of ${val}:`, calculateSquare(val));
+  const p = document.createElement("p");
+  p.textContent = `Square of ${val} is ${calculateSquare(val)}`;
+  document.body.appendChild(p);
+});
+
+// Conditional Logic
+const age = parseInt(prompt("Enter your age:"), 10);
+
+if (age < 18) {
+  alert("You are a minor");
+} else if (age <= 60) {
+  alert("You are an adult");
+} else {
+  alert("You are a senior citizen");
+}
+
+// For loop 1–10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// While loop sum 1–5
+let sum = 0;
+let counter = 1;
+while (counter <= 5) {
+  sum += counter;
+  counter++;
+}
+const sumP = document.createElement("p");
+sumP.textContent = `Sum of 1 to 5: ${sum}`;
+document.body.appendChild(sumP);
