@@ -10,7 +10,6 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
-  padding: 20px;
 }
 
 /* === Layout Structure === */
@@ -25,6 +24,7 @@ footer {
 main {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 section {
